@@ -62,9 +62,13 @@
 
 #Class methods are called directly by the class and not by an instance of the class.
 
-
-
-
+# class Kitten
+#   def self.say_meow
+#     return "meow"
+#   end
+# end
+#
+# puts Kitten.say_meow
 
 ###################################
 ######    LETS TRY IT OUT!    #####
@@ -97,15 +101,15 @@
 #
 # #make one pawn
 # one_pawn = Pawn.new("A2")
-#
-# #make a whole row of pawns
-# pawns = Pawn.make_row("black")
-#
-# #What is being stored in this local variable pawns?
-# print pawns
-#
-# #WHAT IS THIS DOING!?
-# puts pawns.shuffle.first.position
+
+#make a whole row of pawns
+pawns = Pawn.make_row("black")
+
+#What is being stored in this local variable pawns?
+print pawns
+
+#WHAT IS THIS DOING!?
+puts pawns.shuffle.first.position
 
 
 
@@ -116,7 +120,7 @@
 
 
 #In Gems, like faker
-  # https://github.com/stympy/faker/blob/master/lib/faker/hacker.rb
+  https://github.com/stympy/faker/blob/master/lib/faker/hacker.rb
 
 #When we get into databases, our data will be tied to a class. That class will have some premade class methods for us to use:  .find, .last, .where
 #Those class methods allow you to find specific objects of that class based on an specified attributes of that class.
